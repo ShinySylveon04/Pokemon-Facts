@@ -7,7 +7,6 @@ import tweetId from "../utils/tweetId.js";
 
 export function Card(props) {
   const card = {
-    width: "50%",
     maxWidth: "500px",
     minWidth: "220px",
     borderRadius: "5px",
@@ -35,16 +34,12 @@ export function Card(props) {
     textAlign: "left"
   };
 
-  let pokemonName = _.lowerCase(props.speciesName);
+  const pokemonName = _.lowerCase(props.speciesName);
   const tweetNum = tweets[props.tweetNum];
 
-  if (_.endsWith(props.speciesName, "♀")) {
-    pokemonName = pokemonName.slice(0, pokemonName.length - 1) + "-f";
-  } else if (_.endsWith(props.speciesName, "♂")) {
-    pokemonName = pokemonName.slice(0, pokemonName.length - 1) + "-m";
-  } else if (props.speciesName === "Mr. Mime") {
-    pokemonName = "mr-mime";
-  }
+  const spriteName = _.isEqual(pokemonName, "mr. mime")
+    ? "mr-mime"
+    : _.replace(_.replace(pokemonName, "♀", "-f"), "♂", "-m");
 
   return (
     <div className="card" style={card}>
@@ -52,7 +47,7 @@ export function Card(props) {
         <strong>{"#" + props.speciesNum}</strong> {props.speciesName}
         <img
           alt={`${props.speciesName}`}
-          src={`https://img.pokemondb.net/sprites/sun-moon/icon/${pokemonName}.png`}
+          src={`https://img.pokemondb.net/sprites/sun-moon/icon/${spriteName}.png`}
         />
       </div>
       <div className="cardBody" style={cardBody}>
