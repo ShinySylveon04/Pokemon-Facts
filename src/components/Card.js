@@ -9,6 +9,7 @@ export function Card(props) {
   const card = {
     width: "50%",
     maxWidth: "500px",
+    minWidth: "220px",
     borderRadius: "5px",
     font: '1em/1.4 Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif',
     backgroundColor: "#fff",
