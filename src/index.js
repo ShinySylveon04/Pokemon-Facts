@@ -4,13 +4,21 @@ import _ from "lodash";
 
 import species from "./utils/species.js";
 import { Card } from "./components/Card.js";
+import { ScrollButton } from "./components/ScrollButton.js";
 
 function App() {
   let number = species.length - 1;
   return (
     <div
       className="App"
-      style={{ backgroundColor: "#fafafa", padding: "10px" }}
+      style={{
+        backgroundColor: "#fafafa",
+        padding: "10px",
+        height: "100%",
+        width: "100%",
+        marginTop: "-8px",
+        marginLeft: "-8px"
+      }}
     >
       <div
         style={{
@@ -31,6 +39,7 @@ function App() {
           key={num}
         />
       ))}
+      <ScrollButton />
     </div>
   );
 }
