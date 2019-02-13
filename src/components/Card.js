@@ -42,6 +42,8 @@ export function Card(props) {
     pokemonName = pokemonName.slice(0, pokemonName.length - 1) + "-f";
   } else if (_.endsWith(props.speciesName, "♂")) {
     pokemonName = pokemonName.slice(0, pokemonName.length - 1) + "-m";
+  } else if (props.speciesName === "Mr. Mime") {
+    pokemonName = "mr-mime";
   }
 
   return (
