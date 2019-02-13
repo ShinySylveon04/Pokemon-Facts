@@ -15,9 +15,9 @@ function App() {
         backgroundColor: "#fafafa",
         padding: "10px",
         height: "100%",
-        width: "100%",
         marginTop: "-8px",
-        marginLeft: "-8px"
+        marginLeft: "-8px",
+        marginRight: "-8px"
       }}
     >
       <div
