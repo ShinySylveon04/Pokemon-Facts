@@ -37,7 +37,7 @@ export function Card(props) {
   const pokemonName = _.lowerCase(props.speciesName);
   const tweetNum = tweets[props.tweetNum];
 
-  const spriteName = _.isEqual(pokemonName, "mr. mime")
+  const spriteName = _.isEqual(pokemonName, "mr mime")
     ? "mr-mime"
     : _.replace(_.replace(pokemonName, "♀", "-f"), "♂", "-m");
 

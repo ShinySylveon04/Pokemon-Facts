@@ -29,5 +29,6 @@ export default [
   "Should they break, the claws of a Sandslash grow back in a day!",
   "Nidoran♀ might be small, but the poison in their horns packs a serious punch! 💥",
   "Nidorina have a very gentle nature. When they are with their friends or family, they always keep the barbs on their bodies tucked away to avoid hurting anyone. 💗",
-  "Watch out for Nidoqueen. Their tackles often send their foes flying!"
+  "Watch out for Nidoqueen. Their tackles often send their foes flying!",
+  "Nidoran♂ flap their ears like wings when they are listening to distant sounds!"
 ];
