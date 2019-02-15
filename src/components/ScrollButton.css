@@ -16,8 +16,18 @@
   box-shadow: 0px 2px 5px #666;
 }
 
-#toTop:hover {
-  background-color: #fff;
-  color: rgb(41, 73, 130);
-  border: 1px solid rgb(41, 73, 130);
+@media (hover: hover) {
+  #toTop:hover {
+    background-color: #fff;
+    color: rgb(41, 73, 130);
+    border: 1px solid rgb(41, 73, 130);
+  }
+}
+
+@media (hover: none) {
+  #toTop:active {
+    background-color: #fff;
+    color: rgb(41, 73, 130);
+    border: 1px solid rgb(41, 73, 130);
+  }
 }
