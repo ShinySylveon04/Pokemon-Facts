@@ -30,5 +30,9 @@ export default [
   "Nidoran♀ might be small, but the poison in their horns packs a serious punch! 💥",
   "Nidorina have a very gentle nature. When they are with their friends or family, they always keep the barbs on their bodies tucked away to avoid hurting anyone. 💗",
   "Watch out for Nidoqueen. Their tackles often send their foes flying!",
-  "Nidoran♂ flap their ears like wings when they are listening to distant sounds!"
+  "Nidoran♂ flap their ears like wings when they are listening to distant sounds!",
+  "Be careful around Nidorino, Trainers! These aggressive Pokémon attack without warning when they feel anything is wrong in their surroundings!",
+  "One swing of Nidoking’s mighty tail can snap a telephone pole as if it were a matchstick.",
+  "The moonlight that Clefairy store in the wings on their back apparently gives them the ability to float in midair!",
+  "Clefable have such good hearing, they can hear a pin drop from over half a mile away—so make sure you don’t shout around them!"
 ];

@@ -35,25 +35,28 @@ export function Card(props) {
   };
 
   const pokemonName = _.lowerCase(props.speciesName);
-  const tweetNum = tweets[props.tweetNum];
+  const tweetContent = tweets[props.tweetNum];
 
-  const spriteName = _.isEqual(pokemonName, "mr mime")
-    ? "mr-mime"
-    : _.replace(_.replace(pokemonName, "♀", "-f"), "♂", "-m");
+  const spriteName = _.kebabCase(
+    _.replace(_.replace(pokemonName, "♀", "-f"), "♂", "-m"),
+    "mr mime"
+  );
+
+  const tweetEmbed = _.isUndefined(tweetContent) ? null : (
+    <TwitterTweetEmbed tweetId={tweetId[props.tweetNum]} />
+  );
 
   return (
-    <div className="card" style={card}>
-      <div className="cardHeader" style={cardHeader}>
+    <div style={card}>
+      <div style={cardHeader}>
         <strong>{"#" + props.speciesNum}</strong> {props.speciesName}
         <img
-          alt={`${props.speciesName}`}
+          alt={props.speciesName}
           src={`https://img.pokemondb.net/sprites/sun-moon/icon/${spriteName}.png`}
         />
       </div>
-      <div className="cardBody" style={cardBody}>
-        {tweetNum}
-      </div>
-      <TwitterTweetEmbed tweetId={tweetId[props.tweetNum]} />
+      <div style={cardBody}>{tweetContent}</div>
+      {tweetEmbed}
     </div>
   );
 }

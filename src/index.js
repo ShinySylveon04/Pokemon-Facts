@@ -7,7 +7,6 @@ import { Card } from "./components/Card.js";
 import { ScrollButton } from "./components/ScrollButton.js";
 
 function App() {
-  let number = species.length - 1;
   return (
     <div
       className="App"
@@ -31,12 +30,12 @@ function App() {
       >
         <h1>#Pokemon Facts</h1>
       </div>
-      {_.times(number, num => (
+      {_.map(species, (species, index) => (
         <Card
-          speciesName={species[num + 1]}
-          speciesNum={_.padStart(num + 1, 3, "0")}
-          tweetNum={num}
-          key={num}
+          speciesName={species}
+          speciesNum={_.padStart(index + 1, 3, "0")}
+          tweetNum={index}
+          key={index}
         />
       ))}
       <ScrollButton />
