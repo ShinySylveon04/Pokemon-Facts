@@ -1,11 +1,10 @@
-import React from "react";
+import tweetId from "../utils/regions/tweetId.js";
+import tweets from "../utils/regions/tweets.js";
 import _ from "lodash";
+
 import { TwitterTweetEmbed } from "react-twitter-embed";
 
-import tweets from "../utils/pokemon/tweets.js";
-import tweetId from "../utils/pokemon/tweetId.js";
-
-export function Card(props) {
+export function RegionCard(props) {
   const card = {
     maxWidth: "500px",
     minWidth: "220px",
@@ -34,26 +33,19 @@ export function Card(props) {
     textAlign: "left"
   };
 
-  const pokemonName = _.lowerCase(props.speciesName);
   const tweetContent = tweets[props.tweetNum];
 
-  const spriteName = _.kebabCase(
-    _.replace(_.replace(pokemonName, "♀", "-f"), "♂", "-m"),
-    "mr mime"
-  );
-
   const tweetEmbed = _.isUndefined(tweetContent) ? null : (
-    <TwitterTweetEmbed tweetId={tweetId[props.tweetNum]} />
+    <TwitterTweetEmbed
+      tweetId={tweetId[props.tweetNum]}
+      options={{ conversation: "none", dnt: true }}
+    />
   );
 
   return (
     <div style={card}>
       <div style={cardHeader}>
-        <strong>{"#" + props.speciesNum}</strong> {props.speciesName}
-        <img
-          alt={props.speciesName}
-          src={`https://img.pokemondb.net/sprites/sun-moon/icon/${spriteName}.png`}
-        />
+        <strong>{props.regionsName}</strong>
       </div>
       <div style={cardBody}>{tweetContent}</div>
       {tweetEmbed}

@@ -1,11 +1,11 @@
 import React from "react";
-import _ from "lodash";
 import Head from "next/head";
 import Link from "next/link";
+import _ from "lodash";
 
-import species from "../src/utils/pokemon/species.js";
-import { Card } from "../src/components/Card.js";
 import { ScrollButton } from "../src/components/ScrollButton.js";
+import { RegionCard } from "../src/components/RegionCard.js";
+import regions from "../src/utils/regions/regions.js";
 
 export default () => {
   return (
@@ -19,7 +19,7 @@ export default () => {
         }
       `}</style>
       <Head>
-        <title>#Pokemon Facts</title>
+        <title>Pokemon Regions</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="theme-color" content="#000000" />
       </Head>
@@ -43,18 +43,13 @@ export default () => {
             color: "rgb(41,73,130)"
           }}
         >
-          <h1>#Pokemon Facts</h1>
+          <h1>Pokemon Regions</h1>
           <Link>
-            <a href="/regions">Region Tweets</a>
+            <a href="/">#Pokemon Facts</a>
           </Link>
         </div>
-        {_.map(species, (species, index) => (
-          <Card
-            speciesName={species}
-            speciesNum={_.padStart(index + 1, 3, "0")}
-            tweetNum={index}
-            key={index}
-          />
+        {_.map(regions, (regions, index) => (
+          <RegionCard regionsName={regions} tweetNum={index} key={index} />
         ))}
         <ScrollButton />
       </div>
