@@ -34,5 +34,13 @@ export default [
   "Be careful around Nidorino, Trainers! These aggressive Pokémon attack without warning when they feel anything is wrong in their surroundings!",
   "One swing of Nidoking’s mighty tail can snap a telephone pole as if it were a matchstick.",
   "The moonlight that Clefairy store in the wings on their back apparently gives them the ability to float in midair!",
-  "Clefable have such good hearing, they can hear a pin drop from over half a mile away—so make sure you don’t shout around them!"
+  "Clefable have such good hearing, they can hear a pin drop from over half a mile away—so make sure you don’t shout around them!",
+  "The flames that Vulpix produce are sometimes mistaken for ghosts!",
+  "Be careful, Trainers. It is said that people who grab one of the many tails of a Ninetales find themselves under a thousand-year curse!",
+  "Jigglypuff possess a vocal range that exceeds 12 octaves, but each individual's singing skill depends on personal effort! 🎵",
+  "Wigglytuff shed their fine fur when the seasons change. The fur is gathered and spun into a luxurious yarn!",
+  "Zubat rely on echolocation to move about. The frequency of their ultrasonic cries can differ slightly from colony to colony!",
+  "The fangs of a Golbat may look sturdy, but they are actually hollow and fragile!",
+  "Oddish search for fertile soil, then plant themselves in it. It is thought that their feet change shape to emulate to the roots of trees. 🌱",
+  "When a Gloom drools, it produces honey that smells so atrocious, you can smell it more than half a mile away!"
 ];
