@@ -20,7 +20,11 @@ export default () => {
       `}</style>
       <Head>
         <title>#Pokemon Facts</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="#Pokemon Facts"
+          content="View all of the #Pokemon Facts tweets in one place!"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
       </Head>
       <div
