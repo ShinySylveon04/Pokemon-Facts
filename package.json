@@ -14,7 +14,9 @@
     "start": "next dev",
     "build": "next build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "export": "next export",
+    "push": "push-dir --dir=out --branch=gh-pages"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -26,6 +28,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "push-dir": "^0.4.1"
   }
 }
