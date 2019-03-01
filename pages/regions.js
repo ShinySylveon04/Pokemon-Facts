@@ -44,7 +44,7 @@ export default () => {
           }}
         >
           <h1>Pokemon Regions</h1>
-          <Link href="/" as={process.env.BACKEND_URL + "/"}>
+          <Link href="/">
             <a>#Pokemon Facts</a>
           </Link>
         </div>
