@@ -44,8 +44,8 @@ export default () => {
           }}
         >
           <h1>#Pokemon Facts</h1>
-          <Link>
-            <a href="/regions">Region Tweets</a>
+          <Link href={"/regions"} as={process.env.BACKEND_URL + "/regions"}>
+            <a>Region Tweets</a>
           </Link>
         </div>
         {_.map(species, (species, index) => (

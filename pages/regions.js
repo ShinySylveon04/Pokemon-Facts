@@ -44,8 +44,8 @@ export default () => {
           }}
         >
           <h1>Pokemon Regions</h1>
-          <Link>
-            <a href="/">#Pokemon Facts</a>
+          <Link href="/">
+            <a>#Pokemon Facts</a>
           </Link>
         </div>
         {_.map(regions, (regions, index) => (
